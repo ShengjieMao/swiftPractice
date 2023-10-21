@@ -13,6 +13,7 @@
 		00498E872AE47618004CDBD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00498E852AE47618004CDBD9 /* Main.storyboard */; };
 		00498E892AE4761E004CDBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00498E882AE4761E004CDBD9 /* Assets.xcassets */; };
 		00498E8C2AE4761E004CDBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00498E8A2AE4761E004CDBD9 /* LaunchScreen.storyboard */; };
+		00D9CD842AE48D7D006A8EEB /* AddStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D9CD832AE48D7D006A8EEB /* AddStockViewController.swift */; };
 		42C35992FBD6C4C1C8561E11 /* Pods_StockApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FF5F8BDBFAAAF844ABC0DF /* Pods_StockApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		00498E882AE4761E004CDBD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00498E8B2AE4761E004CDBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00498E8D2AE4761E004CDBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D9CD832AE48D7D006A8EEB /* AddStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStockViewController.swift; sourceTree = "<group>"; };
 		8C00E448CBD10ED51CAB4BE0 /* Pods-StockApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockApp.debug.xcconfig"; path = "Target Support Files/Pods-StockApp/Pods-StockApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D9FF5F8BDBFAAAF844ABC0DF /* Pods_StockApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27C8FBF9CA4DA024CD61D46 /* Pods-StockApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockApp.release.xcconfig"; path = "Target Support Files/Pods-StockApp/Pods-StockApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				00498E882AE4761E004CDBD9 /* Assets.xcassets */,
 				00498E8A2AE4761E004CDBD9 /* LaunchScreen.storyboard */,
 				00498E8D2AE4761E004CDBD9 /* Info.plist */,
+				00D9CD832AE48D7D006A8EEB /* AddStockViewController.swift */,
 			);
 			path = StockApp;
 			sourceTree = "<group>";
@@ -80,7 +83,6 @@
 				8C00E448CBD10ED51CAB4BE0 /* Pods-StockApp.debug.xcconfig */,
 				F27C8FBF9CA4DA024CD61D46 /* Pods-StockApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,6 +212,7 @@
 				00498E842AE47618004CDBD9 /* ViewController.swift in Sources */,
 				00498E802AE47618004CDBD9 /* AppDelegate.swift in Sources */,
 				00498E822AE47618004CDBD9 /* SceneDelegate.swift in Sources */,
+				00D9CD842AE48D7D006A8EEB /* AddStockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
