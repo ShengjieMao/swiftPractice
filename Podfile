@@ -14,6 +14,8 @@ target 'StockApp' do
   pod "SwiftSpinner"
 
   pod 'SwiftyJSON'
+  
+  pod "PromiseKit"
 
 end
 
