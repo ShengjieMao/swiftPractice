@@ -11,12 +11,13 @@ import RealmSwift
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var stocksArray: [StockClass] = [StockClass]()
-    var stocksArrayShort: [StockQuoteShort] = [StockQuoteShort]()
+    //var stocksArrayShort: [StockQuoteShort] = [StockQuoteShort]()
 
     @IBOutlet weak var tblView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadStockValues()
+        
+        Ream.Configuration.defaultConfiguration = config
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -38,10 +39,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 stockSymbols.append(stock.symbol)
                 //getAllStockQuotes(symbols: <#T##[String]#>)
             }
+            //stocksArrayShort = [StockQuoteShort]()
+            if(stocks.isEmpty){
+                return
+            }
             getAllStockQuotes(symbols: stockSymbols)
                 .done { stockQuotes in
                     for stockQuote in stockQuotes{
-                        print("\(stockQuote.symbol) \(stockQuote.price)")
+                        let stockClass = StockClass()
+                        stockClass.symbol = stockQuote.symbol
+                        stockClass.price = stockQuote.price
+                        print("Change = \(stockQuote.change)")
+                        self.stocksArrayShort.append(stockClass)
                     }
                     self.tblView.reloadData()
                 }
@@ -53,9 +62,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    // *************some stocksArray here need to be changed to stocks stocksArrayShort ******************//
-    // *************                                                                     *************    //
-    // *************                  in tabelView                                       *************    //
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stocksArray.count
     }
@@ -80,7 +86,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         do{
             let realm = try Realm()
             try realm.write{
-                realm.delete(stock)
+                let predicate = NSPredicate(format: "symbol == %@", stock.symbol)
+                if let productToDelete = realm.objects(StockClass.self).filter(predicate).first{
+                    realm.delete(productToDelete)
+                }
             }
         }catch{
             print("Error in deleting \(error)")

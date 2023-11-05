@@ -17,6 +17,9 @@ target 'StockApp' do
   
   pod "PromiseKit"
 
+  # Pods for KeyBoardCocoapod
+  pod 'IQKeyboardManagerSwift'
+
 end
 
 post_install do |installer|

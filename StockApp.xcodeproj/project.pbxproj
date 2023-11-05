@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00238E222AF6F7C100977F3D /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00238E202AF6F7C000977F3D /* StockTableViewCell.swift */; };
+		00238E232AF6F7C100977F3D /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00238E212AF6F7C100977F3D /* StockTableViewCell.xib */; };
 		00498E802AE47618004CDBD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00498E7F2AE47618004CDBD9 /* AppDelegate.swift */; };
 		00498E822AE47618004CDBD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00498E812AE47618004CDBD9 /* SceneDelegate.swift */; };
 		00498E872AE47618004CDBD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00498E852AE47618004CDBD9 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00238E202AF6F7C000977F3D /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		00238E212AF6F7C100977F3D /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
 		00498E7C2AE47618004CDBD9 /* StockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00498E7F2AE47618004CDBD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00498E812AE47618004CDBD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00238E1F2AF6F77B00977F3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00238E202AF6F7C000977F3D /* StockTableViewCell.swift */,
+				00238E212AF6F7C100977F3D /* StockTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		00498E732AE47617004CDBD9 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +84,7 @@
 		00498E7E2AE47618004CDBD9 /* StockApp */ = {
 			isa = PBXGroup;
 			children = (
+				00238E1F2AF6F77B00977F3D /* View */,
 				00D374962AEDCC6D007857D7 /* Controller */,
 				00D374952AEDCC64007857D7 /* Model */,
 				00D9CD852AE49331006A8EEB /* Utils */,
@@ -190,6 +204,7 @@
 			files = (
 				00498E8C2AE4761E004CDBD9 /* LaunchScreen.storyboard in Resources */,
 				00498E892AE4761E004CDBD9 /* Assets.xcassets in Resources */,
+				00238E232AF6F7C100977F3D /* StockTableViewCell.xib in Resources */,
 				00498E872AE47618004CDBD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00238E222AF6F7C100977F3D /* StockTableViewCell.swift in Sources */,
 				00D3749E2AEDD4C2007857D7 /* StockQuoteShort.swift in Sources */,
 				00D3749B2AEDCE2A007857D7 /* StockAppNetworking.swift in Sources */,
 				00D3749C2AEDCFC6007857D7 /* StockClass.swift in Sources */,

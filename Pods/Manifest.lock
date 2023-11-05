@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.8.0)
+  - IQKeyboardManagerSwift (6.5.16)
   - PromiseKit (8.1.1):
     - PromiseKit/CorePromise (= 8.1.1)
     - PromiseKit/Foundation (= 8.1.1)
@@ -19,6 +20,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - IQKeyboardManagerSwift
   - PromiseKit
   - RealmSwift
   - SwiftSpinner
@@ -27,6 +29,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - IQKeyboardManagerSwift
     - PromiseKit
     - Realm
     - RealmSwift
@@ -35,12 +38,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   PromiseKit: d1be44b474e5acfa16adf007a1f49f104e10fead
   Realm: d97b438de77459e443bd2c8ad5ca0f95107aee4b
   RealmSwift: 6be3f27a7fd3f5cc8f99f4b187cc4e7150299e32
   SwiftSpinner: f9b59477fe107427f2b5b835497d6636fa167ede
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: d94f3726140133aa3ba7f10650f5f8d83c808d85
+PODFILE CHECKSUM: 8e17efe4c6f56ccca77e280ba70b7750c2788d29
 
 COCOAPODS: 1.13.0

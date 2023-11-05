@@ -11,6 +11,7 @@ import RealmSwift
 class StockClass: Object {
     @objc dynamic var symbol: String = "" // use the bridging class that makes changes simutaneously
     @objc dynamic var price: Float = 0.0
+    @objc dynamic var change: Float = 0.0
     @objc dynamic var companyName: String = ""
     @objc dynamic var companyDescription: String = ""
     

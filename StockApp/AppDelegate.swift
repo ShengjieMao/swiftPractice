@@ -6,7 +6,10 @@
 //
 
 import UIKit
-//import IQKeyboardManagerSwift
+// need to import the IQKey?                   //
+// also in podsfile                            //
+// add run pod install yes                     //
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
